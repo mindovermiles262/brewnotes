@@ -31,7 +31,7 @@ You could visit it at [http://localhost:8080](http://localhost:8080)
 
 ### Building the image yourself:
 
-1. Clone this repo
+1. Clone [this repo](https://github.com/mindovermiles262/brewnotes)
 
 2. Build the container:
 
