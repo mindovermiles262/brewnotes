@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
 		libicu-dev \
 		# Required for SyntaxHighlighting
 		python3 \
+    vim \
 	--no-install-recommends && rm -r /var/lib/apt/lists/*
 
 # Install the PHP extensions we need
