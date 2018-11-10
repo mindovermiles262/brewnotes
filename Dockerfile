@@ -47,10 +47,10 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 	&& chown -R www-data:www-data extensions skins cache images
 
 COPY logo.svg /var/www/html/resources/assets/
-COPY data/* /var/www/data/
-COPY LocalSettings.php /var/www/html/
-COPY generate_key.sh /
+#COPY data/* /var/www/data/
+#COPY LocalSettings.php /var/www/html/
+#COPY generate_key.sh /
 
 ENTRYPOINT ["apache2-foreground"]
-RUN ["/usr/local/bin/php", "/var/www/html/maintenance/rebuildall.php"]
-RUN ["/bin/bash", "/generate_key.sh"]
+#RUN ["/usr/local/bin/php", "/var/www/html/maintenance/rebuildall.php"]
+#RUN ["/bin/bash", "/generate_key.sh"]
